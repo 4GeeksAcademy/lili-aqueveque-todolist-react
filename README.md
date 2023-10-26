@@ -5,9 +5,6 @@
 - Install the packages with `$ npm install`.
 - Run the webpack server with `$ npm run start`
 
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
-
 ## Pseudocode
 
 ```
@@ -37,9 +34,48 @@ End component TodoList.
 
 
 
+### Diagram
 
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
++-----------------------------------+
+|                                   |
+|   Input Field for New Todos       |
+|   +---------------------------+   |
+|   |                           |   |
+|   |                           |   |
+|   +---------------------------+   |
+|                                   |
+|                                   |
+|                                   |
+|   User Input Detected            |
+|   +---------------------------+   |
+|   |                           |   |
+|   |   Update inputValue      |   |
+|   |   with new value         |   |
+|   |                           |   |
+|   +---------------------------+   |
+|                                   |
+|   Key Pressed (Enter)            |
+|   +---------------------------+   |
+|   |                           |   |
+|   |   Prevent Default         |   |
+|   |   Behavior               |   |
+|   |                           |   |
+|   |   If inputValue is        |   |
+|   |   not empty:              |   |
+|   |   +-----------------------+   |
+|   |   |                       |   |
+|   |   |   Add inputValue to   |   |
+|   |   |   todos array         |   |
+|   |   |                       |   |
+|   |   +-----------------------+   |
+|   |                           |   |
+|   +---------------------------+   |
+|                                   |
+|   Display Todos as List         |
+|   +---------------------------+   |
+|   |                           |   |
+|   |   Todos Array            |   |
+|   |                           |   |
+|   +---------------------------+   |
+|                                   |
++-----------------------------------+
