@@ -19,7 +19,7 @@ Strategy:
 - Read about controlled components inputs in react.js, you will need to understand the concept.
 
 Pseudocode:
-Create a component called TodoList:
+✔ Create a component called TodoList: 
 
   Initialize state variables:
     - todoInput (to store the user input for new todos, initially empty)
